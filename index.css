@@ -1,0 +1,30 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	display: grid;
+	min-height: 100vh;
+    min-width: 100%;
+	grid-template-rows: 1fr;
+	grid-template-areas: "content";
+}
+
+main {
+	grid-area: content;
+}
+
+div {
+	display: block;
+}
+
+.desktop-only {
+	display: none;
+	visibility: hidden;
+}
+
+.mobile-only {
+	display: block !important;
+	visibility: visible !important;
+}

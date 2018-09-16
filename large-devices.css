@@ -1,0 +1,54 @@
+@media only screen and (min-width: 768px) {
+
+	body {
+		grid-template-columns: 15em 1fr;
+		grid-template-areas: "sidebar  content";
+	}
+
+	main {
+		background-color: #619EB3;
+	  	grid-area: content;
+	}
+
+	header {
+	  	background-color: #B51716;
+	  	grid-area: sidebar;
+	}
+
+	nav h1 {
+		font-size: 2.5rem;
+		padding-top: 1em;
+		text-align: center;
+		padding-bottom: 1em;
+	}
+
+	nav a {
+		text-decoration: none;
+		color: white;
+	}
+
+	#nav_links {
+		direction: rtl;
+	}
+
+	.nav-link {
+		font-size: 1.5em;
+		padding-right: 2em;
+		line-height: 48px;
+	}
+
+	.nav-link:active, .nav-link:hover {
+		background-color: #FFF1D0;
+		color: black;
+	}
+
+	.desktop-only {
+		display: block !important;
+		visibility: visible !important;
+	}
+
+	.mobile-only {
+		display: none !important;
+		visibility: hidden !important;
+	}
+}
